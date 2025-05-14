@@ -17,4 +17,14 @@ public class HomeController {
         return "home";
     }
 
+    @RequestMapping("/about")
+    public String about() {
+        return "about";
+    }
+
+    @RequestMapping("/company")
+    public String company() {
+        return "company";
+    }
+
 }

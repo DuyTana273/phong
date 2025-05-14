@@ -1,0 +1,168 @@
+/* COMPANY PAGE STYLES */
+
+/* Main Section Styles */
+.company-section {
+    padding: 60px 0;
+}
+
+.company-section.bg-light {
+    background-color: #faf9f7 !important;
+}
+
+.company-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.company-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Company Philosophy Section */
+.company-content {
+    padding: 20px 0;
+}
+
+.company-concept {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: serif;
+}
+
+.company-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Company Overview Table */
+.company-table {
+    margin: 30px 0;
+}
+
+/* Reset Bootstrap padding for this specific case */
+.company-table .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.company-table .col-md-3,
+.company-table .col-md-9 {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.company-row {
+    border-bottom: 1px solid #d2d2d2;
+    margin-bottom: 0;
+}
+
+/* Loại bỏ đường kẻ dưới ở hàng cuối cùng */
+.company-row:last-child {
+    border-bottom: none;
+}
+
+.company-label {
+    font-weight: 600;
+    color: #7a6e6a;
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+.company-value {
+    color: #333;
+    line-height: 1.7;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+/* Office Images */
+.office-img-main {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.office-img-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.office-img-sub {
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+}
+
+.office-img-sub img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Office Info */
+.office-info {
+    margin-top: 30px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.company-link {
+    color: #c9a7a0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.company-link:hover {
+    color: #b58d86;
+    text-decoration: underline;
+}
+
+/* Section Title */
+.section-title {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #c9a7a0;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .company-row {
+        display: block;
+    }
+    
+    .company-label, .company-value {
+        width: 100%;
+    }
+    
+    .office-img-main, .office-img-sub {
+        height: auto;
+        margin-bottom: 15px;
+    }
+} 

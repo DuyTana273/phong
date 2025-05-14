@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Fragment</title>
+</head>
+<body>
+    <nav th:fragment="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/home">
+                <img src="/img/avt.jpg" alt="MUTE Logo" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/">ABOUT US</a>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;">
+                            SERVICE
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="/">Nội dung dịch vụ</a></li>
+                            <li><a class="dropdown-item" href="/">Thủ tục và chi phí</a></li>
+                            <li><a class="dropdown-item" href="/">Các quốc gia hỗ trợ</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link" href="/">COMPANY</a>
+                    <a class="nav-link" href="/">Q&A</a>
+                </div>
+                <div class="nav-separator"></div>
+                <div class="nav-buttons ms-3">
+                    <a href="/" class="nav-button"><i class="fa-solid fa-envelope"></i> CONTACT</a>
+                    <a href="/" class="nav-button"><i class="fa-solid fa-user-pen"></i> MEMBERSHIP REGISTRATION FORM</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html> 

@@ -2,6 +2,7 @@
 
 /* Main Section Styles */
 .company-section {
+    background-color: #faf9f7;
     padding: 60px 0;
 }
 
@@ -145,7 +146,7 @@
     position: absolute;
     width: 60px;
     height: 3px;
-    background: #c9a7a0;
+    background: #436de9;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -165,4 +166,29 @@
         height: auto;
         margin-bottom: 15px;
     }
-} 
+}
+
+/* Breadcrumb styling */
+.breadcrumb-section {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    color: #436de9;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: #46a8ff;
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #777;
+}

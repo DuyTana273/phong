@@ -1,0 +1,128 @@
+/* Contact Page Styles */
+
+.contact-section {
+    padding: 120px 0 80px;
+    position: relative;
+}
+
+/* Wave Elements */
+.wave-top, .wave-bottom {
+    height: 60px;
+    background-image: url('/img/wave.svg');
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.wave-top {
+    top: 0;
+    transform: rotate(180deg);
+}
+
+.wave-bottom {
+    bottom: 0;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #001E60;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.page-title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #001E60;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #001E60;
+}
+
+.required {
+    color: #dc3545;
+}
+
+.form-control, .form-select {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #001E60;
+    box-shadow: 0 0 0 0.2rem rgba(0, 30, 96, 0.25);
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+}
+
+/* Submit Button */
+.submit-btn {
+    min-width: 180px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 100px 0 60px;
+    }
+    
+    .contact-form {
+        padding: 25px;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+}
+
+/* Matching the Mute button style from other pages */
+.mute-btn {
+    display: inline-block;
+    background-color: #001E60;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #001E60;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.mute-btn:hover {
+    background-color: transparent;
+    color: #001E60;
+} 

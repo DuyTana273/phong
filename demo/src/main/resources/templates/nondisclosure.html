@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách bảo mật | Mute</title>
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS Custom -->
+    <link th:href="@{/css/navbar.css}" rel="stylesheet">
+    <link th:href="@{/css/footer.css}" rel="stylesheet">
+    <link th:href="@{/css/home.css}" rel="stylesheet">
+    <link th:href="@{/css/nondisclosure.css}" rel="stylesheet">
+</head>
+<body>
+<!-- NAVBAR -->
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<!-- BREADCRUMB -->
+<section class="container" style="margin-top: 80px">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nondisclosure</li>
+        </ol>
+    </nav>
+</section>
+
+<!-- HEADER SECTION -->
+<section class="privacy-header">
+    <div class="wave-animation"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="privacy-title">Chính sách bảo mật</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="privacy-content">
+    <div class="container">
+        <div class="privacy-intro">
+            <p>Công ty Mute (sau đây gọi là "Công ty") đã thiết lập chính sách bảo mật thông tin (sau đây gọi là "Chính sách") liên quan đến việc xử lý thông tin riêng tư trong các dịch vụ được cung cấp trên trang web này (sau đây gọi là "Dịch vụ") như sau.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3 class="privacy-section-title">Điều 1 (Thông tin riêng tư)</h3>
+            <p>Trong các thông tin riêng tư, "thông tin cá nhân" đề cập đến "thông tin cá nhân" theo Luật bảo vệ thông tin cá nhân, và chỉ các thông tin liên quan đến cá nhân còn sống có thể xác định được cá nhân cụ thể thông qua tên, ngày sinh, địa chỉ, số điện thoại, thông tin liên lạc và các mô tả khác.</p>
+            <p>"Thông tin lịch sử và đặc điểm" đề cập đến các thông tin khác ngoài "thông tin cá nhân" đã định nghĩa ở trên, bao gồm lịch sử dịch vụ được sử dụng, sản phẩm được mua, trang web và quảng cáo đã xem, từ khóa tìm kiếm, thời gian sử dụng, phương thức sử dụng, môi trường sử dụng, mã bưu điện, giới tính, nghề nghiệp, tuổi tác, địa chỉ IP, thông tin cookie, thông tin vị trí, thông tin nhận dạng thiết bị, v.v.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3 class="privacy-section-title">Điều 2 (Phương thức thu thập thông tin riêng tư)</h3>
+            <p>Công ty có thể yêu cầu cung cấp thông tin cá nhân như tên, ngày sinh, địa chỉ, số điện thoại, địa chỉ email, số tài khoản ngân hàng, số thẻ tín dụng, số giấy phép lái xe, v.v., khi người dùng đăng ký sử dụng.</p>
+            <p>Chúng tôi cũng có thể thu thập thông tin cá nhân của người dùng từ các đối tác (bao gồm nguồn cung cấp thông tin, nhà quảng cáo, đối tác phân phối quảng cáo, v.v., gọi chung là "đối tác") thông qua các giao dịch hoặc thông tin thanh toán giữa người dùng và đối tác.</p>
+            <p>Công ty thu thập thông tin lịch sử và đặc điểm như dịch vụ và phần mềm đã sử dụng, sản phẩm đã mua, trang web và quảng cáo đã xem, từ khóa tìm kiếm, thời gian sử dụng, phương thức sử dụng, môi trường sử dụng (bao gồm cả trạng thái giao tiếp và các cài đặt khác nhau khi sử dụng thiết bị di động), địa chỉ IP, thông tin cookie, thông tin vị trí, thông tin nhận dạng thiết bị, v.v., khi người dùng sử dụng hoặc truy cập các dịch vụ hoặc trang web của Công ty và đối tác.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3 class="privacy-section-title">Điều 3 (Mục đích thu thập và sử dụng thông tin cá nhân)</h3>
+            <p>Công ty thu thập và sử dụng thông tin cá nhân cho các mục đích sau:</p>
+            <ul class="privacy-list">
+                <li>Để hiển thị thông tin đăng ký như tên, địa chỉ, thông tin liên lạc, phương thức thanh toán, thông tin về dịch vụ đã sử dụng và sản phẩm đã mua, cũng như chi phí liên quan, nhằm cho phép người dùng xem và chỉnh sửa thông tin đăng ký của họ và xem tình trạng sử dụng của họ.</li>
+                <li>Để sử dụng địa chỉ email để thông báo hoặc liên lạc với người dùng, hoặc sử dụng thông tin liên lạc như tên và địa chỉ để gửi sản phẩm hoặc liên lạc với người dùng khi cần thiết.</li>
+                <li>Để xác minh danh tính của người dùng bằng cách sử dụng thông tin như tên, ngày sinh, địa chỉ, số điện thoại, số tài khoản ngân hàng, số thẻ tín dụng, số giấy phép lái xe, kết quả gửi thư có xác nhận giao nhận, v.v.</li>
+                <li>Để tính phí cho người dùng bằng cách sử dụng thông tin như tên sản phẩm đã mua và số lượng, loại dịch vụ đã sử dụng và thời hạn, số lần, số tiền thanh toán, tên, địa chỉ, số tài khoản ngân hàng hoặc số thẻ tín dụng và các thông tin thanh toán khác.</li>
+                <li>Để hiển thị thông tin đã đăng ký với Công ty trên màn hình nhập liệu để người dùng có thể nhập dữ liệu một cách dễ dàng, hoặc để chuyển dữ liệu đến các dịch vụ khác (bao gồm cả dịch vụ do đối tác cung cấp) theo chỉ dẫn của người dùng.</li>
+                <li>Để từ chối dịch vụ đối với người dùng vi phạm điều khoản sử dụng Dịch vụ, chẳng hạn như chậm thanh toán hoặc gây thiệt hại cho bên thứ ba, hoặc người dùng có ý định sử dụng Dịch vụ cho mục đích không chính đáng, bằng cách sử dụng thông tin về cách thức sử dụng, tên, địa chỉ và các thông tin khác để xác định cá nhân.</li>
+                <li>Để phản hồi các câu hỏi của người dùng bằng cách sử dụng thông tin về nội dung câu hỏi, thông tin liên quan đến yêu cầu thanh toán và các thông tin khác cần thiết để Công ty cung cấp dịch vụ cho người dùng, cũng như thông tin về tình trạng sử dụng dịch vụ của người dùng, thông tin liên lạc, v.v.</li>
+                <li>Cho các mục đích phụ khác liên quan đến các mục đích sử dụng trên.</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h3 class="privacy-section-title">Điều 4 (Cung cấp thông tin cá nhân cho bên thứ ba)</h3>
+            <p>Công ty sẽ không cung cấp thông tin cá nhân cho bên thứ ba mà không có sự đồng ý trước của người dùng, ngoại trừ các trường hợp sau. Tuy nhiên, điều này không áp dụng cho các trường hợp được phép theo Luật bảo vệ thông tin cá nhân và các luật khác.</p>
+            <ul class="privacy-list">
+                <li>Khi có yêu cầu theo luật định</li>
+                <li>Khi cần thiết để bảo vệ tính mạng, thân thể hoặc tài sản của con người, và khó có thể nhận được sự đồng ý của người dùng</li>
+                <li>Khi đặc biệt cần thiết để cải thiện sức khỏe cộng đồng hoặc thúc đẩy sự phát triển lành mạnh của trẻ em, và khó có thể nhận được sự đồng ý của người dùng</li>
+                <li>Khi cần thiết để hợp tác với cơ quan nhà nước, chính quyền địa phương hoặc người được ủy quyền trong việc thực hiện các nhiệm vụ theo quy định của pháp luật, và có khả năng việc nhận sự đồng ý của người dùng sẽ gây cản trở cho việc thực hiện các nhiệm vụ đó</li>
+                <li>Khi đã thông báo hoặc công bố trước các thông tin sau:
+                    <ul>
+                        <li>Mục đích sử dụng bao gồm việc cung cấp thông tin cho bên thứ ba</li>
+                        <li>Các mục thông tin được cung cấp cho bên thứ ba</li>
+                        <li>Phương thức hoặc hình thức cung cấp thông tin cho bên thứ ba</li>
+                        <li>Việc cung cấp thông tin cá nhân cho bên thứ ba sẽ được dừng lại theo yêu cầu của người dùng</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Bất kể các quy định trong đoạn trên, các trường hợp sau không được coi là cung cấp thông tin cho bên thứ ba:</p>
+            <ul class="privacy-list">
+                <li>Khi Công ty ủy thác toàn bộ hoặc một phần việc xử lý thông tin cá nhân trong phạm vi cần thiết để đạt được mục đích sử dụng</li>
+                <li>Khi thông tin cá nhân được cung cấp do sáp nhập công ty hoặc các lý do kế thừa kinh doanh khác</li>
+                <li>Khi thông tin cá nhân được sử dụng chung với các bên cụ thể, và đã thông báo trước cho người dùng về việc sử dụng chung này, các mục thông tin được sử dụng chung, phạm vi các bên sử dụng chung, mục đích sử dụng của các bên đó, và tên của người chịu trách nhiệm quản lý thông tin cá nhân đó, hoặc các thông tin này đã được đặt ở trạng thái mà người dùng có thể dễ dàng biết được</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h3 class="privacy-section-title">Điều 5 (Tiết lộ thông tin cá nhân)</h3>
+            <p>Khi Công ty nhận được yêu cầu tiết lộ thông tin cá nhân từ người dùng, Công ty sẽ tiết lộ thông tin đó cho người dùng mà không chậm trễ. Tuy nhiên, Công ty có thể quyết định không tiết lộ toàn bộ hoặc một phần thông tin nếu việc tiết lộ có thể dẫn đến bất kỳ trường hợp nào sau đây, và trong trường hợp quyết định không tiết lộ, Công ty sẽ thông báo cho người dùng về quyết định đó mà không chậm trễ:</p>
+            <ul class="privacy-list">
+                <li>Khi có nguy cơ gây hại đến tính mạng, thân thể, tài sản hoặc các quyền và lợi ích khác của người dùng hoặc bên thứ ba</li>
+                <li>Khi có nguy cơ gây cản trở đáng kể cho hoạt động kinh doanh bình thường của Công ty</li>
+                <li>Khi việc tiết lộ sẽ vi phạm các quy định pháp luật khác</li>
+            </ul>
+            <p>Bất kể các quy định trong đoạn trên, về nguyên tắc, Công ty sẽ không tiết lộ thông tin ngoài thông tin cá nhân, như thông tin lịch sử và đặc điểm.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3 class="privacy-section-title">Điều 6 (Chỉnh sửa và xóa thông tin cá nhân)</h3>
+            <p>Người dùng có thể yêu cầu Công ty chỉnh sửa hoặc xóa thông tin cá nhân của họ theo thủ tục do Công ty quy định, nếu thông tin đó không chính xác.</p>
+            <p>Khi Công ty nhận được yêu cầu từ người dùng như được đề cập trong đoạn trước và xác định rằng cần phải đáp ứng yêu cầu đó, Công ty sẽ chỉnh sửa hoặc xóa thông tin cá nhân mà không chậm trễ và thông báo cho người dùng về việc này.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3 class="privacy-section-title">Điều 7 (Ngừng sử dụng thông tin cá nhân)</h3>
+            <p>Khi Công ty nhận được yêu cầu từ người dùng về việc ngừng sử dụng hoặc xóa bỏ thông tin cá nhân (sau đây gọi là "ngừng sử dụng, v.v.") với lý do rằng thông tin đã được xử lý vượt quá phạm vi mục đích sử dụng đã công bố hoặc đã được thu thập bằng các phương thức không chính đáng, Công ty sẽ tiến hành điều tra cần thiết mà không chậm trễ, và dựa trên kết quả điều tra, sẽ ngừng sử dụng, v.v. thông tin cá nhân và thông báo cho người dùng về việc này.</p>
+            <p>Tuy nhiên, nếu việc ngừng sử dụng, v.v. thông tin cá nhân đòi hỏi chi phí quá cao hoặc khó thực hiện vì lý do kỹ thuật, và có thể thực hiện các biện pháp thay thế cần thiết để bảo vệ quyền và lợi ích của người dùng, Công ty sẽ thực hiện các biện pháp thay thế đó.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3 class="privacy-section-title">Điều 8 (Thay đổi Chính sách bảo mật)</h3>
+            <p>Nội dung Chính sách này có thể được thay đổi mà không cần thông báo cho người dùng.</p>
+            <p>Trừ khi được Công ty quy định khác, Chính sách bảo mật đã sửa đổi sẽ có hiệu lực kể từ thời điểm được đăng tải trên trang web này.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h3 class="privacy-section-title">Điều 9 (Thông tin liên hệ)</h3>
+            <p>Mọi thắc mắc liên quan đến Chính sách này, vui lòng liên hệ theo thông tin dưới đây:</p>
+            <p>Tên công ty: Mute<br>Địa chỉ email: info@mute.ne.jp</p>
+        </div>
+
+        <div class="privacy-footer">
+            <p>Cập nhật lần cuối: Tháng 5 năm 2025</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<div th:replace="fragments/footer :: footer"></div>
+
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS Custom -->
+<script th:src="@{/js/navbar.js}"></script>
+</body>
+</html>

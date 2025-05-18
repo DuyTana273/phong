@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch vụ hôn nhân quốc tế | Mute</title>
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS Custom -->
+    <link th:href="@{/css/navbar.css}" rel="stylesheet">
+    <link th:href="@{/css/footer.css}" rel="stylesheet">
+    <link th:href="@{/css/home.css}" rel="stylesheet">
+    <link th:href="@{/css/service.css}" rel="stylesheet">
+</head>
+<body>
+<!-- NAVBAR -->
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<!-- BREADCRUMB -->
+<section class="container" style="margin-top: 80px">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Service</li>
+        </ol>
+    </nav>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="service-section">
+    <div class="container">
+        <h1 class="service-title text-center">Dịch vụ hôn nhân quốc tế</h1>
+        <h2 class="service-subtitle text-center">Chúng tôi hỗ trợ bạn từ "gặp gỡ" đến "kết hôn" và hơn thế nữa</h2>
+    </div>
+</section>
+
+<!-- Banner -->
+<div id="carouselExample" class="carousel slide service-banner">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img th:src="@{/img/banner/hero-slideshow-image-1.jpg}" class="d-block w-100" alt="About Banner">
+        </div>
+    </div>
+</div>
+
+<!-- TIMELINE SERVICE SECTIONS -->
+<div class="service-timeline">
+    <div class="container">
+        <!-- STAGE 1: CHUẨN BỊ TRƯỚC -->
+        <div class="timeline-item">
+            <div class="timeline-left">
+                <div class="timeline-image">
+                    <img th:src="@{/img/banner/hero-slideshow-image-1.jpg}" alt="Chuẩn bị trước">
+                </div>
+            </div>
+            <div class="timeline-icon-wrapper">
+                <div class="timeline-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+            </div>
+            <div class="timeline-right">
+                <div class="timeline-content">
+                    <h2 class="timeline-title">Chuẩn bị trước</h2>
+                    <h3 class="timeline-subtitle">Tạo tài liệu hồ sơ và video PR</h3>
+                    <p class="timeline-description">Chúng tôi sẽ tạo các tài liệu hồ sơ có thể giới thiệu sự tốt đẹp của bạn trong video và hình ảnh không thể thể hiện trong dữ liệu thông tin cá nhân.</p>
+                    <p class="timeline-note">Đó là một tài liệu cần thiết để tạo ra một video về bản thân, gia đình, môi trường sống, nơi làm việc, v.v., để thu hút lòng tốt của bạn ở mức tối đa có thể và để đảm bảo rằng bạn có thể yên tâm kết hôn từ nước ngoài.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STAGE 2: TÌM KIẾM ĐỐI TÁC -->
+        <div class="timeline-item">
+            <div class="timeline-left">
+                <div class="timeline-image">
+                    <img th:src="@{/img/banner/hero-slideshow-image-1.jpg}" alt="Tìm kiếm đối tác">
+                </div>
+            </div>
+            <div class="timeline-icon-wrapper">
+                <div class="timeline-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="timeline-right">
+                <div class="timeline-content">
+                    <h2 class="timeline-title">Tìm kiếm đối tác</h2>
+                    <h3 class="timeline-subtitle">Lựa chọn quốc gia mục tiêu</h3>
+                    <p class="timeline-description">Chúng tôi sẽ giải thích đặc điểm của các quốc gia có thể được đáp ứng và lựa chọn các quốc gia mục tiêu. (Nếu bạn thay đổi quốc gia mục tiêu sau khi chọn, phí thay đổi hoặc phí hủy sẽ được tính.)</p>
+                    <h3 class="timeline-subtitle">Lựa chọn cô dâu tương lai</h3>
+                    <p class="timeline-description">Bạn sẽ được yêu cầu chọn một trong những bạn cho là tốt nhất từ các tài liệu hồ sơ và video PR của các thành viên nữ.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STAGE 3: HỖ TRỢ VÀ KHÓA HỌC -->
+        <div class="timeline-item">
+            <div class="timeline-left">
+                <div class="timeline-image">
+                    <img th:src="@{/img/banner/hero-slideshow-image-1.jpg}" alt="Hỗ trợ và khóa học">
+                </div>
+            </div>
+            <div class="timeline-icon-wrapper">
+                <div class="timeline-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+            </div>
+            <div class="timeline-right">
+                <div class="timeline-content">
+                    <h2 class="timeline-title">Hỗ trợ & Khóa học</h2>
+                    <h3 class="timeline-subtitle">Các khóa học ngôn ngữ ở các quốc gia mục tiêu (tùy chọn)</h3>
+                    <p class="timeline-description">Bạn sẽ tham gia một khóa học ngôn ngữ trực tuyến trong khoảng 30 phút mỗi khóa học trong hai ngày. Phụ nữ đủ điều kiện cũng đang tham gia các khóa học tiếng Nhật.</p>
+                    <p class="timeline-note">(Thời gian khóa học là một tháng và cần thông báo chấm dứt trước một tháng.)</p>
+                    <h3 class="timeline-subtitle">Hướng dẫn giao tiếp (Tùy chọn)</h3>
+                    <p class="timeline-description">Kỹ năng giao tiếp rất quan trọng trong quá trình tìm kiếm đối tác hôn nhân. Chúng tôi sẽ cung cấp cho bạn các mẹo giao tiếp để xây dựng mối quan hệ tốt đẹp.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STAGE 4: GẶP GỠ VÀ HẸN HÒ -->
+        <div class="timeline-item">
+            <div class="timeline-left">
+                <div class="timeline-image">
+                    <img th:src="@{/img/banner/hero-slideshow-image-1.jpg}" alt="Gặp gỡ và hẹn hò">
+                </div>
+            </div>
+            <div class="timeline-icon-wrapper">
+                <div class="timeline-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+            </div>
+            <div class="timeline-right">
+                <div class="timeline-content">
+                    <h2 class="timeline-title">Gặp gỡ và hẹn hò</h2>
+                    <h3 class="timeline-subtitle">Gặp gỡ trực tuyến</h3>
+                    <p class="timeline-description">Chúng tôi sẽ sắp xếp thời gian và cung cấp phiên dịch để bạn có thể gặp gỡ đối tác tiềm năng qua Zoom, Skype hoặc các nền tảng trực tuyến khác.</p>
+                    <h3 class="timeline-subtitle">Hẹn hò trực tuyến</h3>
+                    <p class="timeline-description">Sau khi gặp gỡ ban đầu, bạn có thể tiếp tục dành thời gian trò chuyện trực tuyến 1-2 lần mỗi tuần, khoảng 30 phút mỗi lần để hiểu nhau hơn.</p>
+                    <p class="timeline-note">Dịch vụ phiên dịch là tùy chọn, nhưng để đảm bảo kết nối Wi-Fi và bảo vệ thông tin cá nhân, các buổi gặp mặt sẽ được tổ chức tại các cơ sở đối tác của chúng tôi.</p>
+                    <h3 class="timeline-subtitle">Gặp gỡ trực tiếp tại quốc gia đối tác</h3>
+                    <p class="timeline-description">Bạn sẽ được sắp xếp gặp gỡ trực tiếp tại quốc gia của đối tác, gặp gỡ gia đình họ và thảo luận về các vấn đề liên quan đến hôn nhân.</p>
+                    <p class="timeline-note">Dịch vụ hộ tống là tùy chọn (có tính phí). Chi phí bao gồm vé máy bay hạng phổ thông, phí hộ tống, chi phí lưu trú, và phương tiện đi lại địa phương.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STAGE 5: HÔN NHÂN -->
+        <div class="timeline-item">
+            <div class="timeline-left">
+                <div class="timeline-image">
+                    <img th:src="@{/img/banner/hero-slideshow-image-1.jpg}" alt="Hôn nhân">
+                </div>
+            </div>
+            <div class="timeline-icon-wrapper">
+                <div class="timeline-icon">
+                    <i class="fas fa-ring"></i>
+                </div>
+            </div>
+            <div class="timeline-right">
+                <div class="timeline-content">
+                    <h2 class="timeline-title">Hôn nhân</h2>
+                    <h3 class="timeline-subtitle">Soạn thảo hợp đồng hôn nhân</h3>
+                    <p class="timeline-description">Để tránh các vấn đề về thừa kế và phân chia tài sản, hợp đồng hôn nhân sẽ được soạn thảo trước khi kết hôn.</p>
+                    <p class="timeline-note">Văn phòng luật sư của chúng tôi sẽ lắng nghe mong muốn của bạn và soạn thảo hợp đồng (bắt buộc, có tính phí).</p>
+                    <h3 class="timeline-subtitle">Chuyến đi kết hôn</h3>
+                    <p class="timeline-description">Bạn sẽ đến quốc gia của đối tác để tổ chức lễ cưới (hoặc thảo luận), chụp ảnh kỷ niệm, và hoàn tất thủ tục tại Bộ Ngoại giao.</p>
+                    <p class="timeline-note">Chi phí hộ tống và hỗ trợ tại địa phương tương tự như các chuyến thăm trước đó.</p>
+                    <h3 class="timeline-subtitle">Thủ tục xuất cảnh và đi lại cho cô dâu</h3>
+                    <p class="timeline-description">Các thủ tục xin visa tại Lãnh sự quán hoặc Đại sứ quán, chi phí đi lại, v.v., sẽ do bạn chi trả. Chúng tôi sẽ cung cấp báo giá trước.</p>
+                    <h3 class="timeline-subtitle">Thủ tục hôn nhân trong nước</h3>
+                    <p class="timeline-description">Thủ tục tại cơ quan quản lý nhập cư địa phương và các văn phòng chính quyền để cấp visa và đăng ký kết hôn.</p>
+                    <p class="timeline-note">Thủ tục cấp visa tại cơ quan quản lý nhập cư sẽ được thực hiện bởi chuyên viên hành chính của chúng tôi (bắt buộc, có tính phí).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STAGE 6: HỖ TRỢ SAU HÔN NHÂN -->
+        <div class="timeline-item">
+            <div class="timeline-left">
+                <div class="timeline-image">
+                    <img th:src="@{/img/banner/hero-slideshow-image-1.jpg}" alt="Hỗ trợ sau hôn nhân">
+                </div>
+            </div>
+            <div class="timeline-icon-wrapper">
+                <div class="timeline-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            <div class="timeline-right">
+                <div class="timeline-content">
+                    <h2 class="timeline-title">Hỗ trợ sau hôn nhân</h2>
+                    <h3 class="timeline-subtitle">Hệ thống hỗ trợ sau kết hôn</h3>
+                    <p class="timeline-description">Mute cung cấp hệ thống hỗ trợ để giải quyết các lo lắng sau kết hôn.</p>
+                    <p class="timeline-note">Hợp đồng hỗ trợ có thời hạn 1 năm (tùy chọn).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div th:replace="fragments/footer :: footer"></div>
+
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS Custom -->
+<script th:src="@{/js/navbar.js}"></script>
+</body>
+</html>

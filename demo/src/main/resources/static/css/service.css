@@ -1,0 +1,347 @@
+/* SERVICE PAGE STYLES */
+
+.service-header {
+    background-color: #faf9f7;
+    padding: 60px 0;
+}
+
+.service-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service-subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+/* Breadcrumb styling */
+.breadcrumb-section {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    color: #436de9;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: #46a8ff;
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #777;
+}
+
+/* Banner Image */
+.service-banner {
+    overflow: hidden;
+}
+
+.service-banner img {
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Main Section Styles */
+.service-section {
+    background: #faf9f7;
+    padding: 60px 0;
+}
+
+.service-section.bg-light {
+    background-color: #faf9f7 !important;
+}
+
+.service-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Timeline Service Style - Revised */
+.service-timeline {
+    position: relative;
+    padding: 80px 0;
+}
+
+.service-timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #eee;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 100px;
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.timeline-left {
+    float: left;
+    width: 45%;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.timeline-right {
+    float: right;
+    width: 45%;
+    padding-left: 30px;
+}
+
+.timeline-icon-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.timeline-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #436de9;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-title {
+    font-size: 1.8rem;
+    color: #436de9;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.timeline-subtitle {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+    border-left: 3px solid #436de9;
+}
+
+.timeline-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.timeline-note {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-note::before {
+    content: '*';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #436de9;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .service-timeline::after {
+        left: 40px;
+    }
+    
+    .timeline-left, 
+    .timeline-right {
+        float: right;
+        width: 100%;
+        padding-left: 90px;
+        padding-right: 0;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    .timeline-icon-wrapper {
+        left: 40px;
+        transform: translateX(-50%);
+    }
+    
+    .timeline-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+    
+    .timeline-left {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-header {
+        padding: 60px 0 30px;
+    }
+    
+    .service-title {
+        font-size: 2rem;
+    }
+    
+    .service-subtitle {
+        font-size: 1rem;
+    }
+    
+    .timeline-title {
+        font-size: 1.5rem;
+    }
+    
+    .timeline-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .timeline-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .timeline-left, 
+    .timeline-right {
+        padding-left: 70px;
+    }
+}
+
+/* OLD Service stages styling - Keeping for reference */
+.service-stage {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.service-stage:nth-child(old) {
+    background-color: #faf9f7;
+}
+
+.stage-title {    
+    color: #436de9;    
+    font-size: 1.8rem;    
+    font-weight: 600;    
+    margin-bottom: 30px;    
+    text-align: center;    
+    position: relative;
+}
+
+.stage-title::after {    
+    content: '';    
+    position: absolute;    
+    bottom: -10px;    
+    left: 50%;    
+    transform: translateX(-50%);    
+    width: 80px;    
+    height: 3px;    
+    background-color: #436de9;
+}
+
+.stage-subtitle {
+    color: #555;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stage-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card-img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.service-card-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-card-text {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.service-note {    
+    padding: 15px;    
+    background-color: #f5f5f5;    
+    border-left: 4px solid #436de9;    
+    border-radius: 0 4px 4px 0;    
+    margin: 20px 0;    
+    font-size: 0.9rem;    
+    color: #555;
+}

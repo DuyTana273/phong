@@ -1,0 +1,219 @@
+/* PRICE PAGE STYLES */
+
+.price-header {
+    background-color: #faf9f7;
+    padding: 60px 0;
+}
+
+/* Main Section Styles */
+.price-section {
+    background: #faf9f7;
+    padding: 60px 0;
+}
+
+.price-section.bg-light {
+    background-color: #faf9f7 !important;
+}
+
+.price-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Banner Image */
+.price-banner {
+    overflow: hidden;
+}
+
+.price-banner img {
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Breadcrumb styling */
+.breadcrumb-section {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    color: #436de9;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: #46a8ff;
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #777;
+}
+
+/* Enrollment Process styling */
+.enrollment-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.enrollment-title {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.enrollment-title::after {    content: '';    position: absolute;    bottom: -10px;    left: 50%;    transform: translateX(-50%);    width: 80px;    height: 3px;    background-color: #436de9;}
+
+.enrollment-process {
+    margin: 40px 0;
+}
+
+.process-step {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.process-number {    background-color: #436de9;    color: white;    width: 40px;    height: 40px;    border-radius: 50%;    display: flex;    align-items: center;    justify-content: center;    font-weight: 600;    font-size: 1.2rem;    margin-bottom: 15px;}
+
+.process-title {    color: #436de9;    font-size: 1.4rem;    font-weight: 600;    margin-bottom: 15px;}
+
+.process-description {
+    color: #666;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.process-note {    padding: 15px;    background-color: #f8f8f8;    border-left: 4px solid #436de9;    margin: 15px 0;    font-size: 0.9rem;    color: #666;}
+
+.apply-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mute-btn {    display: inline-block;    padding: 12px 30px;    background-color: #436de9;    color: white;    text-decoration: none;    border-radius: 30px;    font-weight: 500;    transition: all 0.3s ease;}.mute-btn:hover {    background-color: #46a8ff;    color: white;    transform: translateY(-2px);    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);}
+
+/* Pricing Table styling */
+.pricing-section {
+    padding: 60px 0;
+    /*background-color: #faf9f7;*/
+}
+
+.pricing-title {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-title::after {    content: '';    position: absolute;    bottom: -10px;    left: 50%;    transform: translateX(-50%);    width: 80px;    height: 3px;    background-color: #436de9;}
+
+.price-note {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.price-table th {    background-color: #436de9;    color: white;    padding: 15px;    text-align: left;    font-weight: 600;}
+
+.price-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+.price-table tr:last-child td {
+    border-bottom: none;
+}
+
+.price-table .fee-name {
+    font-weight: 600;
+    width: 30%;
+}
+
+.price-table .fee-amount {
+    font-weight: 600;
+    width: 20%;
+}
+
+.price-table .fee-description {
+    width: 50%;
+    font-size: 0.95rem;
+}
+
+.additional-notes {
+    margin-top: 30px;
+}
+
+.additional-notes p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.additional-notes p::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #c9a7a0;
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .price-header {
+        padding: 60px 0 30px;
+    }
+    
+    .price-title {
+        font-size: 2rem;
+    }
+    
+    .price-subtitle {
+        font-size: 1rem;
+    }
+    
+    .enrollment-title, .pricing-title {
+        font-size: 1.7rem;
+    }
+    
+    .price-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .process-title {
+        font-size: 1.2rem;
+    }
+}

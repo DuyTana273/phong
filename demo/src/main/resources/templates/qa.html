@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu hỏi thường gặp | Mute</title>
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS Custom -->
+    <link th:href="@{/css/navbar.css}" rel="stylesheet">
+    <link th:href="@{/css/footer.css}" rel="stylesheet">
+    <link th:href="@{/css/home.css}" rel="stylesheet">
+    <link th:href="@{/css/qa.css}" rel="stylesheet">
+</head>
+<body>
+<!-- NAVBAR -->
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<!-- BREADCRUMB -->
+<section class="container" style="margin-top: 80px">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">QA</li>
+        </ol>
+    </nav>
+</section>
+
+<!-- HEADER SECTION -->
+<section class="qa-header">
+    <div class="wave-animation"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="qa-title">Câu hỏi thường gặp</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CATEGORY TABS -->
+<section class="qa-categories">
+    <div class="container">
+        <div class="qa-category-tabs">
+            <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-site-tab" data-bs-toggle="pill" data-bs-target="#pills-site" type="button" role="tab">Về lựa chọn dịch vụ</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-membership-tab" data-bs-toggle="pill" data-bs-target="#pills-membership" type="button" role="tab">Về đăng ký thành viên</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-marriage-tab" data-bs-toggle="pill" data-bs-target="#pills-marriage" type="button" role="tab">Về hoạt động hôn nhân</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-payment-tab" data-bs-toggle="pill" data-bs-target="#pills-payment" type="button" role="tab">Về chi phí & thanh toán</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="qa-content">
+    <div class="container">
+        <div class="tab-content" id="pills-tabContent">
+            <!-- CATEGORY 1: Về lựa chọn dịch vụ -->
+            <div class="tab-pane fade show active" id="pills-site" role="tabpanel" aria-labelledby="pills-site-tab">
+                <div class="qa-section">
+                    <div class="accordion" id="accordionService">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#serviceCollapseOne" aria-expanded="true" aria-controls="serviceCollapseOne">
+                                    <i class="fas fa-question-circle me-2"></i> Q1: Trang thông tin dịch vụ môi giới hôn nhân có giống nhau không?
+                                </button>
+                            </h2>
+                            <div id="serviceCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionService">
+                                <div class="accordion-body">
+                                    <p>Các công ty dịch vụ môi giới hôn nhân lớn chủ yếu cung cấp thông tin và tính phí giống nhau cho dù bạn kết hôn hay không. Ngoài ra, một số nơi không có sự tư vấn từ chuyên viên tư vấn và bạn phải tự tìm kiếm đối tác, có thể nói đây là hệ thống phù hợp với những người có thể chủ động tìm kiếm đối tác hôn nhân.</p>
+                                    <p>Mute là dịch vụ tập trung vào việc kết hôn thành công. Mục đích của chúng tôi là giúp bạn gặp gỡ người định mệnh của mình, bất kể trong hay ngoài nước. Với hệ thống công bằng, nếu bạn không kết hôn thành công, bạn sẽ không phải trả chi phí cao. Ngoài ra, vì chúng tôi chuyên về hôn nhân quốc tế, chúng tôi hợp tác chặt chẽ với nhiều tổ chức ở nước ngoài.</p>
+                                    <p>Không dễ để so sánh với các dịch vụ môi giới hôn nhân khác chỉ dành cho người Nhật, nhưng Mute luôn đặt mục tiêu duy nhất là giúp bạn tìm được "người định mệnh". Hãy tự mình xác nhận hệ thống nào phù hợp với bạn.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceCollapseTwo" aria-expanded="false" aria-controls="serviceCollapseTwo">
+                                    <i class="fas fa-question-circle me-2"></i> Q2: Tôi cảm thấy không thoải mái và lo lắng khi đến các văn phòng môi giới hôn nhân
+                                </button>
+                            </h2>
+                            <div id="serviceCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionService">
+                                <div class="accordion-body">
+                                    <p>Mỗi văn phòng môi giới hôn nhân có chính sách quản lý khác nhau. Có những nơi ưu tiên lợi nhuận, có những nơi chỉ hoạt động như nghề phụ tại nhà riêng. Mute là tổ chức chuyên nghiệp với trách nhiệm rõ ràng, hoạt động với mục đích duy nhất là giúp thành viên kết hôn thành công. Chúng tôi cũng cung cấp tư vấn trực tuyến miễn phí và không ép buộc, vì vậy hãy liên hệ với chúng tôi một cách thoải mái. Chắc chắn những lo lắng của bạn sẽ tan biến.</p>
+                                    <p>* Tư vấn trực tuyến chỉ thực hiện theo lịch hẹn trước.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceCollapseThree" aria-expanded="false" aria-controls="serviceCollapseThree">
+                                    <i class="fas fa-question-circle me-2"></i> Q3: Tôi không hiểu rõ về hôn nhân quốc tế và cảm thấy lo lắng
+                                </button>
+                            </h2>
+                            <div id="serviceCollapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionService">
+                                <div class="accordion-body">
+                                    <p>Đúng là khi sống ở Nhật, hôn nhân quốc tế có vẻ xa lạ. Có nhiều khác biệt về ngôn ngữ, văn hóa, phong tục, v.v. Để giải quyết những lo ngại này, Mute hợp tác với luật sư và chuyên viên hành chính để chuẩn bị đối phó với các vấn đề trước khi chúng xảy ra. Chúng tôi cũng hỗ trợ các khóa học ngôn ngữ, khóa học về phép tắc ứng xử và các yếu tố thiết yếu khác cho cuộc sống hôn nhân. Sau khi kết hôn, chúng tôi vẫn duy trì hệ thống hỗ trợ thông qua bộ phận tư vấn.</p>
+                                    <p>Ngoài ra, chúng tôi cũng hợp tác với các tổ chức địa phương để cung cấp hỗ trợ toàn diện cho các buổi gặp gỡ và đám cưới tại nước ngoài.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceCollapseFour" aria-expanded="false" aria-controls="serviceCollapseFour">
+                                    <i class="fas fa-question-circle me-2"></i> Q4: Những người như thế nào thường đăng ký dịch vụ môi giới hôn nhân?
+                                </button>
+                            </h2>
+                            <div id="serviceCollapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionService">
+                                <div class="accordion-body">
+                                    <p>Tại Nhật Bản, độ tuổi phổ biến là 40, với nhiều người từ 50-60 tuổi và đa dạng về nghề nghiệp. Ở nước ngoài, phần lớn là những người từ 20 đến đầu 30 tuổi. Tại Mute, bạn có thể tìm kiếm "người định mệnh" từ khắp nơi trên thế giới.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceCollapseFive" aria-expanded="false" aria-controls="serviceCollapseFive">
+                                    <i class="fas fa-question-circle me-2"></i> Q5: Liệu tôi có thể kết hôn nếu đăng ký dịch vụ môi giới hôn nhân không?
+                                </button>
+                            </h2>
+                            <div id="serviceCollapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionService">
+                                <div class="accordion-body">
+                                    <p>Thành thật mà nói, chúng tôi không thể đảm bảo tuyệt đối. Tuy nhiên, với thái độ tích cực của bạn về hôn nhân và sự hỗ trợ từ các chuyên viên tư vấn của Mute, con đường gặp gỡ "người định mệnh" chắc chắn sẽ gần hơn. Mute sẽ đồng hành và hỗ trợ bạn cho đến ngày bạn mỉm cười trong hạnh phúc kết hôn.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 2: Về đăng ký thành viên -->
+            <div class="tab-pane fade" id="pills-membership" role="tabpanel" aria-labelledby="pills-membership-tab">
+                <div class="qa-section">
+                    <div class="accordion" id="accordionMembership">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#membershipCollapseOne" aria-expanded="true" aria-controls="membershipCollapseOne">
+                                    <i class="fas fa-question-circle me-2"></i> Q1: Tôi cần những gì khi đăng ký thành viên?
+                                </button>
+                            </h2>
+                            <div id="membershipCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionMembership">
+                                <div class="accordion-body">
+                                    <p>Khi đăng ký, bạn cần chuẩn bị các giấy tờ sau đây, phí đăng ký và các khoản phí khác. Phí hàng tháng sẽ được thanh toán thông qua chuyển khoản tự động, vì vậy bạn cần có tài khoản ngân hàng và con dấu ngân hàng (chúng tôi sẽ gửi mẫu đơn chuyển khoản).</p>
+                                    <p>Ngoài ra, chúng tôi sẽ tổ chức một buổi thảo luận trực tuyến để chuẩn bị video giới thiệu.</p>
+                                    <p>* Danh sách giấy tờ cần thiết (Nếu có thắc mắc, vui lòng liên hệ với chúng tôi):</p>
+                                    <ul class="qa-list">
+                                        <li>Giấy chứng nhận độc thân (lấy trong vòng 3 tháng gần đây)</li>
+                                        <li>Giấy đăng ký cư trú (lấy trong vòng 3 tháng gần đây)</li>
+                                        <li>Giấy tờ chứng minh thu nhập (bản sao tờ khai thuế, phiếu lương, v.v.)</li>
+                                        <li>Giấy tờ tùy thân (bằng lái xe, hộ chiếu, thẻ my number, v.v.)</li>
+                                        <li>Ảnh chân dung (chụp trong vòng 3 tháng gần đây)</li>
+                                        <li>Lý lịch sơ yếu</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#membershipCollapseTwo" aria-expanded="false" aria-controls="membershipCollapseTwo">
+                                    <i class="fas fa-question-circle me-2"></i> Q2: Tôi muốn biết về quy trình từ đăng ký đến kết hôn
+                                </button>
+                            </h2>
+                            <div id="membershipCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionMembership">
+                                <div class="accordion-body">
+                                    <p>Sau khi hoàn tất thủ tục đăng ký và được phê duyệt, chúng tôi sẽ tiến hành phỏng vấn chi tiết để hiểu rõ về điều kiện và mong muốn của bạn. Sau đó, chúng tôi sẽ tìm kiếm người phù hợp với bạn và sắp xếp buổi gặp mặt trực tuyến hoặc tại nước ngoài.</p>
+                                    <p>Nếu cả hai đồng ý tiến tới mối quan hệ, chúng tôi sẽ hỗ trợ các bước tiếp theo như giao tiếp, quy trình hành chính cho hôn nhân quốc tế, và chuẩn bị đám cưới. Chi tiết cụ thể sẽ được giải thích trong buổi tư vấn.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#membershipCollapseThree" aria-expanded="false" aria-controls="membershipCollapseThree">
+                                    <i class="fas fa-question-circle me-2"></i> Q3: Tôi có cần ghi bổ sung người thân làm người bảo lãnh không?
+                                </button>
+                            </h2>
+                            <div id="membershipCollapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionMembership">
+                                <div class="accordion-body">
+                                    <p>Không cần thiết phải có người bảo lãnh để đăng ký. Tuy nhiên, để quá trình diễn ra suôn sẻ, chúng tôi khuyến nghị bạn nên thông báo cho gia đình về việc bạn đang sử dụng dịch vụ môi giới hôn nhân.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#membershipCollapseFour" aria-expanded="false" aria-controls="membershipCollapseFour">
+                                    <i class="fas fa-question-circle me-2"></i> Q4: Liệu việc đăng ký thành viên có được giữ bí mật không?
+                                </button>
+                            </h2>
+                            <div id="membershipCollapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionMembership">
+                                <div class="accordion-body">
+                                    <p>Tất nhiên. Chúng tôi sẽ không tiết lộ thông tin cá nhân của bạn cho bất kỳ ai mà không có sự đồng ý của bạn. Thông tin chỉ được tiết lộ cho đối tác tiềm năng khi bạn đồng ý gặp mặt.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#membershipCollapseFive" aria-expanded="false" aria-controls="membershipCollapseFive">
+                                    <i class="fas fa-question-circle me-2"></i> Q5: Tôi không có máy tính hoặc điện thoại thông minh, liệu tôi có thể đăng ký không?
+                                </button>
+                            </h2>
+                            <div id="membershipCollapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionMembership">
+                                <div class="accordion-body">
+                                    <p>Các quy trình cơ bản của chúng tôi đều sử dụng phương tiện điện tử, vì vậy việc có máy tính hoặc điện thoại thông minh là cần thiết. Nếu bạn chưa quen với công nghệ, chúng tôi sẽ hướng dẫn bạn cụ thể.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 3: Về hoạt động hôn nhân -->
+            <div class="tab-pane fade" id="pills-marriage" role="tabpanel" aria-labelledby="pills-marriage-tab">
+                <div class="qa-section">
+                    <div class="accordion" id="accordionMarriage">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#marriageCollapseOne" aria-expanded="true" aria-controls="marriageCollapseOne">
+                                    <i class="fas fa-question-circle me-2"></i> Q1: Tôi có quyền từ chối đối tác được giới thiệu không?
+                                </button>
+                            </h2>
+                            <div id="marriageCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionMarriage">
+                                <div class="accordion-body">
+                                    <p>Tất nhiên bạn có quyền từ chối. Chúng tôi luôn cố gắng giới thiệu những người phù hợp nhất dựa trên mong muốn của bạn, nhưng cuối cùng, quyết định là của bạn. Nếu bạn từ chối một đề xuất, chúng tôi sẽ tìm kiếm ứng viên khác phù hợp hơn.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#marriageCollapseTwo" aria-expanded="false" aria-controls="marriageCollapseTwo">
+                                    <i class="fas fa-question-circle me-2"></i> Q2: Tôi nên chuẩn bị gì cho buổi gặp mặt đầu tiên?
+                                </button>
+                            </h2>
+                            <div id="marriageCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionMarriage">
+                                <div class="accordion-body">
+                                    <p>Đối với buổi gặp mặt trực tuyến đầu tiên, hãy chuẩn bị về ngoại hình như bạn đang đi gặp trực tiếp. Đừng mặc quần áo bệ rạc chỉ vì đó là cuộc gọi video. Hãy chuẩn bị một số câu hỏi hoặc chủ đề trò chuyện để không bị bế tắc trong cuộc trò chuyện.</p>
+                                    <p>Đối với các buổi gặp mặt thực tế tại nước ngoài, chúng tôi sẽ có hướng dẫn cụ thể về trang phục, phong tục địa phương và các lưu ý quan trọng khác.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#marriageCollapseThree" aria-expanded="false" aria-controls="marriageCollapseThree">
+                                    <i class="fas fa-question-circle me-2"></i> Q3: Tôi có nên cân nhắc tất cả các buổi gặp mặt một cách nghiêm túc không?
+                                </button>
+                            </h2>
+                            <div id="marriageCollapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionMarriage">
+                                <div class="accordion-body">
+                                    <p>Có, bạn nên tiếp cận mỗi buổi gặp mặt một cách nghiêm túc. Tuy nhiên, điều này không có nghĩa là phải đặt quá nhiều áp lực lên bản thân. Hãy coi mỗi buổi gặp mặt như một cơ hội để tìm hiểu thêm về đối tác tiềm năng và tự hiểu rõ bản thân hơn.</p>
+                                    <p>Chúng tôi khuyên bạn nên gặp nhiều người khác nhau để có góc nhìn đa dạng và tìm ra người thực sự phù hợp với mình. Trong quá trình này, bạn sẽ hiểu rõ hơn về những gì mình thực sự mong muốn ở một người bạn đời.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#marriageCollapseFour" aria-expanded="false" aria-controls="marriageCollapseFour">
+                                    <i class="fas fa-question-circle me-2"></i> Q4: Rào cản ngôn ngữ có phải là vấn đề lớn không?
+                                </button>
+                            </h2>
+                            <div id="marriageCollapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionMarriage">
+                                <div class="accordion-body">
+                                    <p>Rào cản ngôn ngữ là một thách thức thực tế trong hôn nhân quốc tế, nhưng không phải là trở ngại không thể vượt qua. Mute cung cấp dịch vụ phiên dịch cho các buổi gặp mặt và hỗ trợ học ngôn ngữ cho cả hai đối tác.</p>
+                                    <p>Nhiều cặp đôi đã thành công bất chấp khác biệt ngôn ngữ ban đầu. Với sự kiên trì và nỗ lực, giao tiếp sẽ dần trở nên dễ dàng hơn. Chúng tôi đã chứng kiến nhiều cặp đôi phát triển phương thức giao tiếp riêng của họ, kết hợp cả ngôn ngữ lời nói và phi lời nói.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#marriageCollapseFive" aria-expanded="false" aria-controls="marriageCollapseFive">
+                                    <i class="fas fa-question-circle me-2"></i> Q5: Tôi nên làm gì nếu cảm thấy do dự?
+                                </button>
+                            </h2>
+                            <div id="marriageCollapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionMarriage">
+                                <div class="accordion-body">
+                                    <p>Sự do dự là điều bình thường khi đưa ra quyết định quan trọng như hôn nhân. Thay vì dành quá nhiều thời gian để lo lắng, hãy tiếp tục gặp gỡ đối tác để hiểu rõ họ hơn. Đặc biệt trong hôn nhân quốc tế, việc dành thời gian để xây dựng mối quan hệ trước khi đưa ra quyết định cuối cùng là rất quan trọng.</p>
+                                    <p>Nhưng hãy nhớ rằng, lãng phí thời gian chính là "thời gian lo lắng". Vì khi bạn chỉ lo lắng mà không hành động, bạn không thể biết được người đối diện như thế nào và cũng không thể đạt được kết quả gì. Ngay cả khi cuối cùng người đó không phù hợp với bạn, việc gặp gỡ nhiều người và đưa ra lựa chọn sẽ luôn là kinh nghiệm quý báu cho bạn và sẽ hữu ích cho các buổi gặp mặt tiếp theo. Không có "lãng phí" trong việc gặp gỡ con người.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#marriageCollapseSix" aria-expanded="false" aria-controls="marriageCollapseSix">
+                                    <i class="fas fa-question-circle me-2"></i> Q6: Các bạn có hỗ trợ gì trong thời gian hẹn hò không?
+                                </button>
+                            </h2>
+                            <div id="marriageCollapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionMarriage">
+                                <div class="accordion-body">
+                                    <p>Mute không chỉ là công ty cung cấp thông tin hôn nhân. Chúng tôi là doanh nghiệp hỗ trợ hôn nhân quốc tế toàn diện.</p>
+                                    <p>Nhiều người giữ bí mật về hoạt động tìm kiếm đối tác và không thể chia sẻ những lo lắng với người xung quanh. Trong những trường hợp này, các chuyên viên tư vấn của chúng tôi sẽ lắng nghe và hỗ trợ bạn, đóng vai trò như người bạn hoặc người thân. Đồng thời, trong thời gian hẹn hò, bạn cần tự nỗ lực học ngôn ngữ, tìm hiểu phong tục và văn hóa của đối tác.</p>
+                                    <p>Hôn nhân quốc tế có nhiều rào cản cần vượt qua. Mute đã xây dựng hệ thống hỗ trợ để giúp bạn vượt qua những rào cản này, nhưng chúng cũng đòi hỏi nỗ lực từ phía bạn.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#marriageCollapseSeven" aria-expanded="false" aria-controls="marriageCollapseSeven">
+                                    <i class="fas fa-question-circle me-2"></i> Q7: Có giới hạn thời gian cho hoạt động tìm kiếm đối tác không?
+                                </button>
+                            </h2>
+                            <div id="marriageCollapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionMarriage">
+                                <div class="accordion-body">
+                                    <p>Mute không đặt giới hạn thời gian cho hoạt động tìm kiếm đối tác vì chúng tôi mong muốn hỗ trợ bạn cho đến khi bạn kết hôn thành công.</p>
+                                    <p>Chúng tôi cam kết duy trì mối quan hệ với bạn không chỉ đến khi kết hôn mà còn sau đó, không giới hạn thời gian.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#marriageCollapseEight" aria-expanded="false" aria-controls="marriageCollapseEight">
+                                    <i class="fas fa-question-circle me-2"></i> Q8: Từ khi đăng ký đến khi kết hôn thường mất bao lâu?
+                                </button>
+                            </h2>
+                            <div id="marriageCollapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionMarriage">
+                                <div class="accordion-body">
+                                    <p>Thời gian này khác nhau tùy theo từng người, nhưng đối với hôn nhân quốc tế, thông thường mất khoảng 10 tháng đến 1,5 năm. Hôn nhân là quyết định quan trọng trong đời nên không thể quyết định một cách hấp tấp, nhưng nếu quá thận trọng, bạn cũng có thể bỏ lỡ cơ hội gặp gỡ.</p>
+                                    <p>Chúng tôi khuyên bạn nên tích cực tham gia các buổi gặp mặt ban đầu, và khi bắt đầu mối quan hệ hẹn hò, hãy cân nhắc kỹ lưỡng về tương lai trước khi đưa ra quyết định. Những người tích cực trong quá trình tìm kiếm thường tiến tới hôn nhân nhanh hơn.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 4: Về chi phí & thanh toán -->
+            <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
+                <div class="qa-section">
+                    <div class="accordion" id="accordionPayment">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#paymentCollapseOne" aria-expanded="true" aria-controls="paymentCollapseOne">
+                                    <i class="fas fa-question-circle me-2"></i> Q1: Có phải trả thêm chi phí nào sau khi đăng ký không?
+                                </button>
+                            </h2>
+                            <div id="paymentCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPayment">
+                                <div class="accordion-body">
+                                    <p>Mute không thực hiện bất kỳ hoạt động bán hàng nào. Tuy nhiên, chúng tôi có thể giới thiệu tài liệu học tập cho các khóa học ngôn ngữ hoặc khóa học về phép tắc ứng xử trong các dịch vụ tùy chọn. Nếu bạn thấy cần thiết, bạn có thể mua những tài liệu này từ hiệu sách.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentCollapseTwo" aria-expanded="false" aria-controls="paymentCollapseTwo">
+                                    <i class="fas fa-question-circle me-2"></i> Q2: Phương thức thanh toán như thế nào?
+                                </button>
+                            </h2>
+                            <div id="paymentCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPayment">
+                                <div class="accordion-body">
+                                    <p>Mute không nhận thanh toán trực tiếp bằng tiền mặt.</p>
+                                    <p>Phí thành viên hàng tháng sẽ được trích từ tài khoản ngân hàng đã đăng ký. Đối với các chi phí khác, chúng tôi sẽ gửi hóa đơn qua email và bạn có thể thanh toán bằng chuyển khoản ngân hàng.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentCollapseThree" aria-expanded="false" aria-controls="paymentCollapseThree">
+                                    <i class="fas fa-question-circle me-2"></i> Q3: Khi nào tôi cần thanh toán chi phí cho buổi gặp mặt?
+                                </button>
+                            </h2>
+                            <div id="paymentCollapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionPayment">
+                                <div class="accordion-body">
+                                    <p>Đối với các buổi gặp mặt trực tuyến, thanh toán phải được thực hiện ít nhất 5 ngày làm việc trước buổi hẹn.</p>
+                                    <p>Đối với các buổi gặp mặt tại nước ngoài, sau khi lịch trình được xác nhận, chúng tôi sẽ gửi bảng báo giá bao gồm chi phí di chuyển. Sau khi bạn xác nhận và không có yêu cầu thay đổi, chúng tôi sẽ phát hành hóa đơn. Vì cần đặt vé máy bay và các dịch vụ khác, chúng tôi yêu cầu bạn thanh toán đúng thời hạn ghi trên hóa đơn.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentCollapseFour" aria-expanded="false" aria-controls="paymentCollapseFour">
+                                    <i class="fas fa-question-circle me-2"></i> Q4: Chi phí ban đầu có được thanh toán trực tiếp bằng tiền mặt không?
+                                </button>
+                            </h2>
+                            <div id="paymentCollapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionPayment">
+                                <div class="accordion-body">
+                                    <p>Mute không nhận thanh toán trực tiếp bằng tiền mặt, kể cả chi phí ban đầu.</p>
+                                    <p>Ngoại trừ phí thành viên hàng tháng, tất cả các khoản thanh toán đều thực hiện qua chuyển khoản ngân hàng.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<div th:replace="fragments/footer :: footer"></div>
+
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS Custom -->
+<script th:src="@{/js/navbar.js}"></script>
+</body>
+</html>

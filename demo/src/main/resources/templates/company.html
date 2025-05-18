@@ -117,7 +117,7 @@
 </section>
 
 <!-- SECTION 3 -->
-<section class="company-section">
+<section id="partners-legal" class="company-section">
   <div class="container">
     <h3 class="section-title">Đối tác và Cố vấn pháp lý</h3>
     
@@ -148,8 +148,6 @@
   </div>
 </section>
 
-
-
 <!-- FOOTER -->
 <div th:replace="fragments/footer :: footer"></div>
 
@@ -159,5 +157,28 @@
 <!-- JS Custom -->
 <script th:src="@{/js/navbar.js}"></script>
 <script th:src="@{/js/home.js}"></script>
+
+<!-- Scroll to section if hash exists -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if URL has a hash
+    if(window.location.hash) {
+      // Get the target element
+      const targetElement = document.querySelector(window.location.hash);
+      
+      // If target element exists
+      if(targetElement) {
+        // Add a small delay to ensure everything is loaded
+        setTimeout(function() {
+          // Scroll to the target element with offset for navbar
+          window.scrollTo({
+            top: targetElement.offsetTop - 100,
+            behavior: 'smooth'
+          });
+        }, 300);
+      }
+    }
+  });
+</script>
 </body>
 </html>

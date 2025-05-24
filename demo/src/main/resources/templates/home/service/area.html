@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>対応エリア国 | Job Creator</title>
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS Custom -->
+    <link th:href="@{/css/fragment/navbar.css}" rel="stylesheet">
+    <link th:href="@{/css/fragment/footer.css}" rel="stylesheet">
+    <link th:href="@{/css/common/dropdown-info.css}" rel="stylesheet">
+    <link th:href="@{/css/home/home.css}" rel="stylesheet">
+    <link th:href="@{/css/home/area.css}" rel="stylesheet">
+</head>
+<body>
+<!-- NAVBAR -->
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<!-- DROPDOWN INFO -->
+<div th:replace="~{common/dropdown-info :: contact-info}"></div>
+
+<!-- BREADCRUMB -->
+<section class="container" style="margin-top: 80px">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">対応エリア国</li>
+        </ol>
+    </nav>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="area-section">
+    <div class="container">
+        <h1 class="area-title text-center">対応エリア国</h1>
+        <h2 class="area-subtitle text-center">世界に目を向けると、機会はこんなにも広がります。</h2>
+    </div>
+</section>
+
+<!-- Banner -->
+<div id="carouselExample" class="carousel slide area-banner">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img th:src="@{/img/banner/photo1.jpg}" class="d-block w-100" alt="Area Banner">
+        </div>
+    </div>
+</div>
+
+<!-- COUNTRIES SECTION -->
+<section class="py-5">
+    <div class="container">
+        <h3 class="section-subtitle text-center mb-4">ご紹介に対応している主な国について</h3>
+        
+        <p class="mb-5">
+            ビジネスモデル・業務フロー・チームビルディングの現状把握と理解を深め、ニーズにマッチしたより良いシステムを構築するため、様々な手法・プラットフォームを検討し、最適なプランをご提案いたします。
+        </p>
+
+        <!-- Country Listings -->
+        <div class="country-listings">
+            <!-- Russia -->
+            <div class="country-item">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img th:src="@{/img/banner/photo1.jpg}" class="country-image" alt="Russia">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="country-header">
+                            <h3 class="country-name">ロシア</h3>
+                            <h3 class="country-name-en">Russia</h3>
+                        </div>
+                        <div class="country-divider"></div>
+                        <p class="country-description">
+                            ロシアの労働者は、経済的困難の中での高い適応力と粘り強さ、技術やテクノロジー分野での確かな専門スキルが特徴です。規律正しく忠実で、限られた資源で問題を解決する創造力を持ちますが、インフレや地域格差、都市と地方の収入不均衡などの課題に直面しています。                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uzbekistan -->
+            <div class="country-item">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img th:src="@{/img/banner/photo1.jpg}" class="country-image" alt="Uzbekistan">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="country-header">
+                            <h3 class="country-name">マレーシア</h3>
+                            <h3 class="country-name-en">Malaysia</h3>
+                        </div>
+                        <div class="country-divider"></div>
+                        <p class="country-description">
+                            マレーシアの労働者は、文化的多様性とプロフェッショナリズムが特徴です。献身的で柔軟、仕事の要求への適応力が高く、特に工業、ハイテク、サービス業で活躍します。マレー系、中国系、インド系のイスラム教、儒教、ヒンドゥー教の価値観から、調和を重んじ、尊重と集団意識を大切にする働き方を示します。ただし、長時間労働、対面を保つプレッシャー、衝突回避のための直接的コミュニケーションの不足などの課題も抱えます。クアラルンプールなどの都市部の労働者は高い教育水準と革新的な思考を持ち、農村部の労働者は農業や伝統産業に根ざしています。                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Turkey -->
+            <div class="country-item">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img th:src="@{/img/banner/photo1.jpg}" class="country-image" alt="Turkey">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="country-header">
+                            <h3 class="country-name">ネパール</h3>
+                            <h3 class="country-name-en">Nepal</h3>
+                        </div>
+                        <div class="country-divider"></div>
+                        <p class="country-description">
+                            ネパールの労働者は、勤勉で忍耐強く、責任感の強い働きぶりが特徴です。建設、農業、サービス、製造業などの分野で働き、特に湾岸諸国、マレーシア、インドへの労働輸出が一般的です。建設、織物、食品加工などの手工業に優れたスキルを持ちます。ヒンドゥー教や仏教の文化の影響を受け、謙虚で敬意を重んじ、コミュニティの価値を重視する姿勢が見られます。ただし、低賃金、海外での過酷な労働条件、教育やインフラの制約によるスキル向上の機会不足などの課題に直面しています。農村部では自給自足の農業に依存し、都市部の若者はテクノロジーや観光業での機会を求めています。                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kazakhstan -->
+            <div class="country-item">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img th:src="@{/img/banner/photo1.jpg}" class="country-image" alt="Kazakhstan">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="country-header">
+                            <h3 class="country-name">タイ</h3>
+                            <h3 class="country-name-en">Thailand</h3>
+                        </div>
+                        <div class="country-divider"></div>
+                        <p class="country-description">
+                            タイの労働者は、勤勉で器用、友好的な態度が特徴で、仏教文化の影響を受け、職場での尊敬と調和を重視します。製造業、農業、観光業、サービス業で働き、食品加工、織物、工芸品のスキルに優れています。バンコクなどの都市部の労働者はダイナミックでテクノロジーに精通し、教育水準が高い一方、農村部の労働者は主に米栽培などの農業に従事します。ただし、収入の不均衡、一部の重工業での労働条件の制限、移民労働者との競争などの課題に直面しています。チームワークと柔軟性により、タイの労働者は国際的な環境で高く評価されています。                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ukraine -->
+            <div class="country-item">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img th:src="@{/img/banner/photo1.jpg}" class="country-image" alt="Ukraine">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="country-header">
+                            <h3 class="country-name"> カンボジア</h3>
+                            <h3 class="country-name-en">Cambodia</h3>
+                        </div>
+                        <div class="country-divider"></div>
+                        <p class="country-description">
+                            カンボジアの労働者は、勤勉で粘り強く、学ぶ意欲が高いことが特徴で、困難な時代を乗り越え急速に発展する国で活躍しています。主に衣料品、建設、農業（特に米やゴム栽培）、観光業で働き、若年労働者が多いです。クメール仏教文化の影響を受け、謙虚で敬意を持ち、コミュニティを重視する姿勢が見られます。プノンペンなどの都市部の労働者はテクノロジーやサービスに関する基本的なスキルを持ち、農村部の労働者は伝統的な農業に従事します。しかし、低賃金、専門スキルの訓練不足、繊維や建設業界での労働条件の課題に直面しています。熱意と適応力により、カンボジアの労働者は地域でますます高く評価されています。                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vietnam -->
+            <div class="country-item">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img th:src="@{/img/banner/photo1.jpg}" class="country-image" alt="Vietnam">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="country-header">
+                            <h3 class="country-name">ベトナム</h3>
+                            <h3 class="country-name-en">Vietnam</h3>
+                        </div>
+                        <div class="country-divider"></div>
+                        <p class="country-description">
+                            ベトナムの労働者は、勤勉で器用、向上心が強いことで知られ、地域や国際的に高く評価されています。主に製造業（衣料品、電子機器）、農業（米、コーヒー）、建設業、サービス業（観光、IT）で働いています。儒教や仏教の影響を受けた文化により、規律正しく、上司を尊重し、チームワークを重視する姿勢が見られます。ハノイやホーチミンなどの大都市の労働者は高い教育水準と技術スキルを持ち、農村部の労働者は農業や伝統工芸に従事します。ただし、賃金の低さ、一部の産業での労働条件の制限、グローバル化の中での競争圧力などの課題に直面しています。柔軟性と向上心により、ベトナムの労働者はグローバル経済で重要な存在です。                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Malaysia -->
+<!--            <div class="country-item">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-5">-->
+<!--                        <img th:src="@{/img/banner/photo1.jpg}" class="country-image" alt="Malaysia">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-7">-->
+<!--                        <div class="country-header">-->
+<!--                            <h3 class="country-name">Malaysia</h3>-->
+<!--                            <h3 class="country-name-en">Malaysia</h3>-->
+<!--                        </div>-->
+<!--                        <div class="country-divider"></div>-->
+<!--                        <p class="country-description">-->
+<!--                            Malaysia, cửa ngõ của châu Á, nằm ở trung tâm khu vực Đông Nam Á. Đây là xã hội đa dân tộc, đa văn hóa nơi các nền văn hóa, tôn giáo và ngôn ngữ khác nhau cùng tồn tại, tạo nên một "xã hội toàn cầu" trong đó mọi người tôn trọng sự đa dạng của nhau. Mặc dù Hồi giáo là quốc giáo, nhưng do tính chất đa dân tộc nên không nghiêm khắc như ở Trung Đông và có không khí chấp nhận tự do tôn giáo. Về tính cách, phụ nữ Malaysia thường có tính thoải mái đặc trưng của các nước nhiệt đới, yêu thương gia đình và có tính cách dịu dàng.-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<div th:replace="fragments/footer :: footer"></div>
+
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS Custom -->
+<script th:src="@{/js/common/navbar.js}"></script>
+<script th:src="@{/js/home.js}"></script>
+</body>
+</html>

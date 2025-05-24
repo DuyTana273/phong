@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,31 +9,31 @@
     <nav th:fragment="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/home">
-                <img src="/img/avt.jpg" alt="MUTE Logo" height="30">
+                <img src="/img/logo.png" alt="MUTE Logo" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="/about">ABOUT US</a>
+                    <a class="nav-link" href="/about">JOB CREATORとは</a>
                     <div class="dropdown">
                         <button class="btn dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;">
-                            SERVICE
+                            サービスについて
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="/service">Nội dung dịch vụ</a></li>
-                            <li><a class="dropdown-item" href="/price">Thủ tục và chi phí</a></li>
-                            <li><a class="dropdown-item" href="/area">Các quốc gia hỗ trợ</a></li>
+                            <li><a class="dropdown-item" href="/service">サービス内容</a></li>
+                            <li><a class="dropdown-item" href="/price">手続きの流れ</a></li>
+                            <li><a class="dropdown-item" href="/area">対応エリア国</a></li>
                         </ul>
                     </div>
-                    <a class="nav-link" href="/company">COMPANY</a>
+                    <a class="nav-link" href="/company">運営元情報</a>
                     <a class="nav-link" href="/qa">Q&A</a>
                 </div>
                 <div class="nav-separator"></div>
                 <div class="nav-buttons ms-3">
-                    <a href="/contact" class="nav-button"><i class="fa-solid fa-envelope"></i> CONTACT</a>
-                    <a href="/terms" class="nav-button"><i class="fa-solid fa-user-pen"></i> MEMBERSHIP REGISTRATION FORM</a>
+                    <a href="/contact" class="nav-button"><i class="fa-solid fa-envelope"></i> お問い合わせ</a>
+                    <a href="/terms" class="nav-button"><i class="fa-solid fa-user-pen"></i> お申し込み</a>
                 </div>
             </div>
         </div>

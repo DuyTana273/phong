@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Info</title>
+</head>
+<body>
+<!-- Dropdown Info -->
+<div th:fragment="contact-info" class="contact-container">
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger" data-bs-toggle="dropdown" aria-expanded="false">
+            <img th:src="@{/img/info/contact-logo.png}" alt="info">
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="tel:+84912345678" title="phone"><img th:src="@{/img/info/phone-logo.png}" alt="phone"></a></li>
+            <li><a class="dropdown-item" href="mailto:info@example.com" title="email"><img th:src="@{/img/info/gmail-logo.png}" alt="email"></a></li>
+            <li><a class="dropdown-item" href="https://facebook.com/duytana273" target="_blank" title="facebook"><img th:src="@{/img/info/facebook-logo.png}" alt="Facebook"></a></li>
+            <li><a class="dropdown-item" href="https://www.facebook.com/messages/t/100072241145537" target="_blank" title="message"><img th:src="@{/img/info/message-logo.png}" alt="message"></a></li>
+            <li><a class="dropdown-item" href="https://zalo.me/0379074528" target="_blank" title="zalo"><img th:src="@{/img/info/zalo-logo.png}" alt="zalo"></a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

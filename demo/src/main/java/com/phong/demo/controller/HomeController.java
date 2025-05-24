@@ -8,56 +8,51 @@ public class HomeController {
 
     @RequestMapping("/")
     public String index() {
-        return "home";
+        return "home/home";
     }
 
     @RequestMapping("/home")
     public String home() {
-        return "home";
+        return "home/home";
     }
 
     @RequestMapping("/about")
     public String about() {
-        return "about";
+        return "home/about";
     }
 
     @RequestMapping("/company")
     public String company() {
-        return "company";
+        return "home/company";
     }
     
-    @RequestMapping("/contact")
-    public String contact() {
-        return "contact";
-    }
-
     @RequestMapping("/service")
     public String service() {
-        return "service/service";
+        return "home/service/service";
     }
 
     @RequestMapping("/price")
     public String price() {
-        return "service/price";
+        return "home/service/price";
     }
 
     @RequestMapping("/area")
     public String area() {
-        return "service/area";
+        return "home/service/area";
     }
 
     @RequestMapping("/qa")
     public String qa() {
-        return "qa";
+        return "home/qa";
     }
 
     @RequestMapping("/terms")
     public String terms() {
-        return "terms";
+        return "home/terms";
     }
 
     @RequestMapping("/nondisclosure")
     public String nondisclosure() {
-        return "nondisclosure";
+        return "home/nondisclosure";
     }
 }

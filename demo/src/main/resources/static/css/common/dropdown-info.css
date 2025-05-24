@@ -1,0 +1,173 @@
+.contact-container {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 90px !important;
+    z-index: 1000 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+/* Bo tròn nút button */
+.contact-container .btn {
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px !important; /* Thêm padding để logo không bị sát cạnh */
+    overflow: hidden !important; /* Đảm bảo hình ảnh không bị tràn ra ngoài */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Thêm shadow để button nổi bật */
+    transition: all 0.3s ease !important;
+}
+
+/* Styling cho hình ảnh trong button */
+.contact-container .btn img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
+
+.contact-container .btn:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Styling cho dropdown menu */
+.contact-container .dropdown-menu {
+    bottom: 20px !important; /* Giảm khoảng cách từ button */
+    top: auto !important;
+    right: 5px !important;
+    left: auto !important;
+    margin-bottom: 5px !important;
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    min-width: auto !important;
+}
+
+/* Hiển thị dropdown-menu khi có class show */
+.contact-container .dropdown-menu.show {
+    display: flex !important;
+    flex-direction: column !important; /* Sắp xếp theo chiều dọc */
+    align-items: center !important;
+    gap: 10px !important; /* Khoảng cách giữa các item */
+}
+
+/* Styling cho dropdown-item container */
+.contact-container .dropdown-menu li {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi menu show */
+.contact-container .dropdown-menu.show li:nth-child(1) {
+    animation: fadeInUp 0.3s ease 0.05s forwards;
+}
+
+.contact-container .dropdown-menu.show li:nth-child(2) {
+    animation: fadeInUp 0.3s ease 0.1s forwards;
+}
+
+.contact-container .dropdown-menu.show li:nth-child(3) {
+    animation: fadeInUp 0.3s ease 0.15s forwards;
+}
+
+.contact-container .dropdown-menu.show li:nth-child(4) {
+    animation: fadeInUp 0.3s ease 0.2s forwards;
+}
+
+.contact-container .dropdown-menu.show li:nth-child(5) {
+    animation: fadeInUp 0.3s ease 0.25s forwards;
+}
+
+/* Định nghĩa hiệu ứng fadeInUp */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bo tròn các icon thông tin */
+.contact-container .dropdown-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    margin: 0 auto !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+    transition: all 0.3s ease !important;
+    padding: 0 !important;
+}
+
+.contact-container .dropdown-item:hover {
+    background-color: #f8f9fa !important;
+    transform: scale(1.2) !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Styling cho hình ảnh trong dropdown-item */
+.contact-container .dropdown-item img {
+    width: 22px !important;
+    height: 22px !important;
+    object-fit: contain !important;
+}
+
+/* Thêm tooltip cho mỗi item */
+.contact-container .dropdown-item::after {
+    content: attr(title) !important;
+    position: absolute !important;
+    left: 50px !important; /* Hiển thị tooltip bên phải */
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+    color: white !important;
+    padding: 2px 8px !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    white-space: nowrap !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: all 0.3s ease !important;
+}
+
+.contact-container .dropdown-item:hover::after {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Animation cho button khi load trang */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.contact-container .btn {
+    animation: pulse 2s infinite;
+}

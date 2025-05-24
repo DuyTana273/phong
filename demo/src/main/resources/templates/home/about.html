@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS Custom -->
+    <link th:href="@{/css/fragment/navbar.css}" rel="stylesheet">
+    <link th:href="@{/css/fragment/footer.css}" rel="stylesheet">
+    <link th:href="@{/css/common/dropdown-info.css}" rel="stylesheet">
+    <link th:href="@{/css/home/home.css}" rel="stylesheet">
+    <link th:href="@{/css/home/about.css}" rel="stylesheet">
+</head>
+<body>
+<!-- NAVBAR -->
+<div th:replace="fragments/navbar :: navbar"></div>
+
+<!-- DROPDOWN INFO -->
+<div th:replace="~{common/dropdown-info :: contact-info}"></div>
+
+<!-- BREADCRUMB -->
+<section class="container" style="margin-top: 80px">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">JOB CREATORとは</li>
+        </ol>
+    </nav>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="about-section">
+    <div class="container">
+        <h1 class="about-title text-center">About</h1>
+        <h2 class="about-subtitle text-center">JOB CREATORとは</h2>
+    </div>
+</section>
+
+<!-- Banner -->
+<div id="carouselExample" class="carousel slide about-banner">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img th:src="@{/img/banner/photo1.jpg}" class="d-block w-100" alt="About Banner">
+        </div>
+    </div>
+</div>
+
+<section class="about-section">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="about-content">
+                    <p style="font-size: 25px"><strong>JOB CREATORは、国際結婚の架け橋として、人生を変える出会いを創出します。私たちの使命は、国境を越えた真実の愛を結ぶこと。</strong></p>
+                    <p>「人と人をつなぐ」という信念のもと、一人ひとりに寄り添ったパーソナライズドなサービスで、理想のパートナーとの出会いを叶えます。</p>
+                    <ul>
+                        <li><strong>心を込めたコンサルティング：</strong>経験豊富な専門家が、あなたの希望に合わせたオーダーメイドのプランをご提案。</li>
+                        <li><strong>始まりからゴールまで：</strong>出会いの第一歩から幸せな未来へと、全ての過程を丁寧にサポート。</li>
+                        <li><strong>安心のプライバシー保護：</strong>最新技術で個人情報を厳格に守り、信頼のサービスを提供。</li>
+                        <li><strong>世界をつなぐネットワーク：</strong>グローバルなパートナーシップにより、最高のマッチング機会をお届け。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img th:src="@{/img/banner/hero-slideshow-image-1.jpg}" alt="About Us" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="stats-section">
+    <div class="container">
+        <div class="row align-items-center g-2">
+            <div class="col-md-5 mb-4 mb-md-0">
+                <div class="stats-category">Hôn nhân quốc tế</div>
+                <h2 class="stats-title">Hôn nhân quốc tế trong dữ liệu</h2>
+                <div class="stats-description">Số lượng người đến và đi từ Nhật Bản ra nước ngoài và từ nước ngoài đến Nhật Bản đã tăng lên qua từng năm, và các cuộc hôn nhân quốc tế đã trở thành một thế giới không phải là hiếm.</div>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-6 mb-4 d-flex flex-column align-items-end">
+                        <div class="stats-number">40000</div>
+                    </div>
+                    <div class="col-6 mb-4 d-flex flex-column align-items-start">
+                        <div class="stats-label">Số lượng hôn nhân quốc tế sống ở Nhật Bản là 40.000</div>
+                        <div class="stats-text">Vào những năm 1960, số lượng kết hôn giữa các cặp vợ chồng quốc tế sống ở Nhật Bản là khoảng 4 ~ 5.000 mỗi năm, nhưng nó bắt đầu tăng vào cuối những năm 80, gần 40.000 vào năm 2001 và dao động quanh mức 40.000 trong những năm gần đây.</div>
+                    </div>
+                    <div class="col-6 mb-4 d-flex flex-column align-items-end">
+                        <div class="stats-number">21852</div>
+                    </div>
+                    <div class="col-6 mb-4 d-flex flex-column align-items-start">
+                        <div class="stats-label">Hơn 20.000 cuộc hôn nhân mỗi năm</div>
+                        <div class="stats-text">Theo số liệu thống kê quan trọng của Bộ Y tế, Lao động và Phúc lợi, số lượng các cuộc hôn nhân mà một trong hai vợ chồng là người nước ngoài là 21.852 mỗi năm vào năm 2018, tăng 3,5% so với năm trước. Hôn nhân quốc tế chiếm 3,7% tổng số cuộc hôn nhân.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="about-section">
+    <div class="container">
+        <h3 class="section-title">お問い合わせ</h3>
+
+        <!-- Office Images -->
+        <div class="row mt-4 mb-4">
+            <div class="col-md-8">
+                <div class="office-img-main">
+                    <img th:src="@{/img/banner/hero-slideshow-image-1.jpg}" class="img-fluid rounded" alt="Office Main">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="office-img-sub mb-3">
+                    <img th:src="@{/img/banner/hero-slideshow-image-2.jpg}" class="img-fluid rounded" alt="Office Sub 1">
+                </div>
+                <div class="office-img-sub">
+                    <img th:src="@{/img/banner/hero-slideshow-image-3.jpg}" class="img-fluid rounded" alt="Office Sub 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="office-info">
+            <p>
+                <strong>JOB CREATORのお問い合わせ</strong><br>
+                何かご質問やご相談がございましたら、いつでもお気軽にご連絡ください！<br>
+                ご予約をご希望の方は、簡単なフォームからお申し込みいただけます。<br>
+                私たちのチームが、温かく、親身になってお答えします。<br>
+                あなたの新しい一歩を、心から応援しています！<br>
+                今すぐ<a href="#" class="about-link">"メッセージ"</a> や <a href="#" class="about-link">"フォーム"</a>でご連絡をどうぞ！
+            </p>
+
+            <p>
+                <strong>【本社所在地】</strong><br>
+                〒824-0003<br>
+                福岡県行橋市中央3丁目5番25号
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<div th:replace="fragments/footer :: footer"></div>
+
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS Custom -->
+<script th:src="@{/js/common/navbar.js}"></script>
+<script th:src="@{/js/home.js}"></script>
+</body>
+</html>

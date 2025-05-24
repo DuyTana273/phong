@@ -1,0 +1,209 @@
+/* ABOUT PAGE STYLES */
+
+/* Main Section Styles */
+.about-section {
+    background: #faf9f7;
+    padding: 60px 0;
+}
+
+.about-section.bg-light {
+    background-color: #faf9f7 !important;
+}
+
+.about-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.about-subtitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* About Content */
+.about-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.about-content ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.about-content ul li {
+    margin-bottom: 10px;
+}
+
+/* Stats Section */
+.stats-section {
+    background: #faf9f7;
+    padding: 60px 0;
+}
+
+.stats-category {
+    color: #b7b7b7;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.stats-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 16px 0 24px 0;
+    color: #333;
+}
+
+.stats-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.stats-number {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #436de9;
+    text-align: right;
+    width: 100%;
+}
+
+.stats-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #656e76;
+    margin-bottom: 8px;
+    text-align: left;
+    width: 100%;
+}
+
+.stats-text {
+    font-size: 1rem;
+    color: #7a6e6a;
+    text-align: left;
+    width: 100%;
+    line-height: 1.7;
+}
+
+/* Banner Image */
+.about-banner {
+    overflow: hidden;
+}
+
+.about-banner img {
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Office Images */
+.office-img-main {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.office-img-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.office-img-sub {
+    width: 100%;
+    height: 165px;
+    overflow: hidden;
+}
+
+.office-img-sub img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Office Info */
+.office-info {
+    margin-top: 30px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.about-link {
+    color: #436de9;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-link:hover {
+    color: #557df8;
+    text-decoration: underline;
+}
+
+/* Section Title */
+.section-title {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #436de9;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stats-number {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .stats-label, .stats-text {
+        text-align: center;
+    }
+    
+    .office-img-main, .office-img-sub {
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+
+/* Breadcrumb styling */
+.breadcrumb-section {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    color: #436de9;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: #46a8ff;
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #777;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- CSS Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS Custom -->
+    <link th:href="@{/css/fragment/navbar.css}" rel="stylesheet">
+    <link th:href="@{/css/fragment/footer.css}" rel="stylesheet">
+    <link th:href="@{/css/common/dropdown-info.css}" rel="stylesheet">
+    <link th:href="@{/css/home/home.css}" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div th:replace="fragments/navbar :: navbar"></div>
+
+    <!-- DROPDOWN INFO -->
+    <div th:replace="~{common/dropdown-info :: contact-info}"></div>
+
+    <!-- SECTION: SlideShow -->
+    <section class="main-visual">
+        <div id="mainCarousel" class="carousel">
+            <!-- Slideshow Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-slide-to="0" class="active"></button>
+                <button type="button" data-slide-to="1"></button>
+                <button type="button" data-slide-to="2"></button>
+            </div>
+            <!-- Slideshow Content -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="slide-wrapper">
+                        <img th:src="@{/img/banner/hero-slideshow-image-1.jpg}" class="slide-image" alt="Slide 1">
+                        <div class="overlay">
+                            <div class="container">
+                                <h2 class="sub-title">私たちのソリューションで、貴社の成長を確実にサポートします！</h2>
+                                <h1 class="main-title">コストを利益に変え、共に未来を切り開く！</h1>
+                                <a href="/static" class="mute-btn">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="slide-wrapper">
+                        <img th:src="@{/img/banner/hero-slideshow-image-2.jpg}" class="slide-image" alt="Slide 2">
+                        <div class="overlay">
+                            <div class="container">
+                                <h2 class="sub-title">今すぐ効率を最大化し、業界のトップを目指しましょう！</h2>
+                                <h1 class="main-title">今日の効率化で、明日のリーダーに！</h1>
+                                <a href="/static" class="mute-btn">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="slide-wrapper">
+                        <img th:src="@{/img/banner/hero-slideshow-image-3.jpg}" class="slide-image" alt="Slide 3">
+                        <div class="overlay">
+                            <div class="container">
+                                <h2 class="sub-title">最高の品質で、貴社の信頼と成功を永遠に守ります！</h2>
+                                <h1 class="main-title">卓越した品質で、持続的な成功を！</h1>
+                                <a href="/static" class="mute-btn">MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Animation Effect -->
+            <div class="wave-animation"></div>
+            <!-- Slideshow Navigation Buttons -->
+            <button class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- CONTAINER 1 -->
+    <section class="container py-5">
+        <h2 class="section-title">Service</h2>
+        <h3 class="section-subtitle">「企業と人材」「企業と企業」「企業とモノ」<br>
+            JOB CREATORは、「つなぐ」「つながる」サポートを通じて <br>
+            企業の発展を応援します</h3>
+        <p class="section-text">
+            私たちは、企業やお店の課題や効率化をヒトとITの力で解決まで導くカスタマーサクセスとして伴走します。
+        </p>
+        <p class="section-text">
+            課題や目標を目的や優先度に合わせて最適なコンサルティング提案でサポートいたします
+        </p>
+        <div class="text-center mt-5">
+            <a href="/static" class="mute-btn">サービスについて</a>
+        </div>
+    </section>
+
+    <!-- CONTAINER 2 -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title">Activity flow</h2>
+            <h3 class="section-subtitle">Tạo ra những cuộc chạm trán tốt nhất với hệ thống hỗ trợ hoàn hảo</h3>
+            <p class="section-text text-center mb-5">
+                Mute là một món sushi nướng.<br>
+                "Người mai mối chăm sóc = Người mai mối" sẽ hỗ trợ bạn từ "gặp gỡ" đến xa hơn ở Nhật Bản và địa phương.
+            </p>
+
+            <!-- Cards -->
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-3">
+                    <div class="activity-card">
+                        <h4>Tư vấn trước</h4>
+                        <p>Một người phụ trách toàn thời gian sẽ lắng nghe quan điểm của bạn về tình yêu và hôn nhân, điều kiện mong muốn, v.v.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-3">
+                    <div class="activity-card">
+                        <h4>Hỗ trợ truyền thông</h4>
+                        <p>Kỹ năng đàm thoại cũng rất quan trọng đối với hôn nhân. Dưới đây là một số mẹo giao tiếp giúp bạn nuôi dưỡng mối quan hệ của mình.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-3">
+                    <div class="activity-card">
+                        <h4>Hỗ trợ quốc gia</h4>
+                        <p>Chúng tôi hỗ trợ sự khác biệt về "ngôn ngữ", "phong tục" và "tôn giáo" với các chương trình đào tạo cụ thể theo quốc gia.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-3">
+                    <div class="activity-card">
+                        <h4>Theo dõi sau kết hôn</h4>
+                        <p>Chúng tôi sẽ đồng hành cùng bạn đến tận nơi và hỗ trợ bạn về các khía cạnh pháp lý và chuẩn bị đám cưới.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="/static" class="mute-btn">JOB CREATORの活用の流れ </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTAINER 3 -->
+    <div class="container py-5">
+        <div class="container">
+            <h2 class="section-title">Answers and Questions</h2>
+            <h3 class="section-subtitle">よくある質問</h3>
+        </div>
+
+        <!-- FAQ -->
+        <section class="container">
+            <div class="accordion" id="faqAccordion">
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Q1: 株式会社 JOB CREATORの人材コンサルティングサービスは、どのようなサポートを提供しますか？
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            労務管理から採用、社員教育まで、企業の人事課題を総合的に解決します。効率的な人事管理を実現し、法務リスクを最小限に抑え、持続的な成長を支える高品質な人材チームを構築します。                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Q2: 経営戦略コンサルティングは、企業の成長目標達成にどのように貢献しますか？
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            市場分析を通じて、商品開発やマーケティング戦略の策定を支援します。計画立案から実行まで一貫してサポートし、具体的かつ持続可能な成長目標の達成を確実にします。                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Q3: 経営改善コンサルティングは、どのような具体的な問題を解決できますか？
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            運営コストの高さや非効率なプロセス、部署間の連携不足などの問題を的確に特定します。その後、詳細な改善プランを提案し、実行をサポートすることで、スムーズな企業運営と収益向上を実現します。                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Q4: 業務請負・業務委託サービスの利点は何ですか？
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            業務請負・委託サービスにより、運営コストの削減とリソースの最適化を図り、企業はコア業務に集中できます。生産ライン管理や業務プロセスの豊富な経験を活かし、低コストで高パフォーマンスを提供します。                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Q5:  DX支援サポートは、どのような方法で経営課題を解決しますか？
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            貴社の経営課題を評価し、最適なIT戦略とシステム導入を提案します。プロセス最適化、効率向上、イノベーション促進をサポートし、コンサルティングから導入までスムーズなデジタル変革を実現します。                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="/qa" class="mute-btn">よくある質問一覧表</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <div th:replace="fragments/footer :: footer"></div>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Custom -->
+    <script th:src="@{/js/common/navbar.js}"></script>
+    <script th:src="@{/js/home.js}"></script>
+</body>
+</html>
